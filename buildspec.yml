@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      android: 29
+      java: corretto8
+  pre_build:
+	commands
+		npm install
+  build:
+    commands:
+      ls
+      - ./gradlew assembleDebug
+artifacts:
+  files:
+    - app/build/outputs/apk/app-debug.apk
