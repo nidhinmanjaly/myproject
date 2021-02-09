@@ -5,8 +5,10 @@ phases:
     runtime-versions:
       android: 29
       java: corretto8
-  commands:
-      npm install
+      
+   pre_build:
+    commands:
+    - npm install --silent --no-progress
   build:
     commands:
       - chmod +x ./gradlew
