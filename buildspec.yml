@@ -10,7 +10,7 @@ phases:
       npm install
   build:
     commands:
-      ls
+      - chmod +x ./gradlew
       - ./gradlew assembleDebug
 artifacts:
   files:
