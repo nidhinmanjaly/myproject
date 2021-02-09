@@ -6,8 +6,8 @@ phases:
       android: 29
       java: corretto8
   pre_build:
-	commands
-		npm install
+	  commands:
+		  npm install
   build:
     commands:
       ls
